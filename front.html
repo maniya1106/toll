@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <style>
+        #headofpage {
+            width: 100%;
+            background-color: yellow;
+        }
+
+        #logotext {
+            font-size: 200%;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            text-align: center;
+            font-weight: bolder;
+        }
+    </style>
+    <title>MORTH</title>
+</head>
+
+<body>
+    <div id="headofpage">
+        <p id="logotext">Ministry of Road Transport and Highway</p>
+    </div>
+    <form action="processingg.php" method="post">
+        Enter a wehical plate no. <input type="text" name="plate_no." id="palte"><br>
+        <input type="submit" value="Click here">
+    </form>
+    <script>
+        function plateNo() {
+            const x = document.getElementById("plate").value;
+            module.exports = x;
+        }
+    </script>
+</body>
+
+</html>
